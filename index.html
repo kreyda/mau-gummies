@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAU — Daily Superfood Gummies</title>
+  <meta name="description" content="MAU daily superfood gummies. Build your mau. Share wellness. Earn rewards.">
+  <meta name="theme-color" content="#173A28">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/mau-pack.webp">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/shop.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <mask id="m-bear" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="58">
+      <rect width="64" height="58" fill="#fff"/>
+      <ellipse cx="32" cy="34" rx="24" ry="21" fill="#000"/>
+    </mask>
+  </defs>
+  <symbol id="i-bear" viewBox="0 0 64 58">
+    <g fill="none" stroke="currentColor" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="13.5" cy="14.5" r="8.5" mask="url(#m-bear)"/>
+      <circle cx="50.5" cy="14.5" r="8.5" mask="url(#m-bear)"/>
+      <ellipse cx="32" cy="34" rx="24" ry="21"/>
+      <path d="M19.5 30.5q4.2-5 8.4 0M36.1 30.5q4.2-5 8.4 0"/>
+      <ellipse cx="32" cy="42.5" rx="8" ry="6.4" stroke-width="3.6"/>
+    </g>
+    <ellipse cx="32" cy="40.6" rx="3.3" ry="2.4" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.9 6.9 5.1 11.1 12 12-6.9.9-11.1 5.1-12 12-.9-6.9-5.1-11.1-12-12C6.9 11.1 11.1 6.9 12 0Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 8h14l-1 12H6L5 8Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9 10V7a3 3 0 0 1 6 0v3"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4.5 20c1.4-3.6 4.2-5.4 7.5-5.4s6.1 1.8 7.5 5.4"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <!-- hand-drawn arrows -->
+  <symbol id="i-hand-arrow" viewBox="0 0 120 80"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12c18 34 52 52 100 44"/><path d="M92 44l15 12-14 11"/></g></symbol>
+  <symbol id="i-hand-loop" viewBox="0 0 140 90"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 70C22 22 64 6 70 34c4 22-24 26-18 6 7-22 44-22 76 2"/><path d="M114 26l15 13-17 8"/></g></symbol>
+  <symbol id="i-hand-down" viewBox="0 0 60 110"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M40 4C10 26 8 60 30 100"/><path d="M16 88l14 14 10-18"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.8l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9l7.1-.6L12 1.8Z"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M5 12h14"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8" fill="var(--cream, #fff)"/><circle cx="17" cy="17.5" r="1.8" fill="var(--cream, #fff)"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.8 4.5 5.6v6c0 4.6 3.2 8 7.5 9.6 4.3-1.6 7.5-5 7.5-9.6v-6L12 2.8Z"/><path d="m8.8 12.2 2.2 2.2 4.4-4.6"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></g></symbol>
+  <symbol id="i-underline" viewBox="0 0 300 24" preserveAspectRatio="none"><path fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" d="M4 16C70 6 160 4 296 10M40 20c60-6 140-8 220-4"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ 1. ANNOUNCEMENT ============ -->
+<div class="announce" role="region" aria-label="Announcement">
+  <div class="announce__track">
+    <span>Free shipping on your first MAU order</span><svg class="announce__star"><use href="#i-spark"/></svg>
+    <span>30-day guarantee</span><svg class="announce__star"><use href="#i-spark"/></svg>
+    <span>Skip or cancel anytime</span><svg class="announce__star"><use href="#i-spark"/></svg>
+    <span aria-hidden="true">Free shipping on your first MAU order</span><svg class="announce__star" aria-hidden="true"><use href="#i-spark"/></svg>
+    <span aria-hidden="true">30-day guarantee</span><svg class="announce__star" aria-hidden="true"><use href="#i-spark"/></svg>
+    <span aria-hidden="true">Skip or cancel anytime</span><svg class="announce__star" aria-hidden="true"><use href="#i-spark"/></svg>
+  </div>
+</div>
+
+<!-- ============ 2. NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner wrap">
+    <a class="wordmark" href="#top" aria-label="MAU home">
+      <svg class="wordmark__bear" aria-hidden="true"><use href="#i-bear"/></svg>
+      <span class="wordmark__type">mau</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="product.html">Shop</a>
+      <a href="#how">How it works</a>
+      <a href="#stars">MAU Stars</a>
+      <a href="#community">Community</a>
+      <a href="#science">Science</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__icon" href="account/" aria-label="Account"><svg><use href="#i-user"/></svg></a>
+      <a class="nav__bag" href="cart.html" data-cart-open aria-label="Bag, 0 items"><svg><use href="#i-bag"/></svg><span>Bag</span><b data-cart-count>0</b></a>
+      <a class="btn btn--lime btn--sm nav__cta" href="#shop">Get mau</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Mobile">
+    <a href="product.html"><span>01</span>Shop</a>
+    <a href="#how"><span>02</span>How it works</a>
+    <a href="#stars"><span>03</span>MAU Stars</a>
+    <a href="#community"><span>04</span>Community</a>
+    <a href="#science"><span>05</span>Science</a>
+    <a href="#faq"><span>06</span>FAQ</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--lime btn--lg btn--block" href="#shop">Get your mau</a>
+    <p class="mono">Free shipping on your first order · 30-day guarantee</p>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ 3. HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner wrap">
+    <div class="hero__copy">
+      <p class="eyebrow reveal"><span class="eyebrow__dot"></span>New · Daily superfood gummies</p>
+      <h1 class="hero__title d reveal">
+        <span class="line">Your daily</span>
+        <span class="line">wellness,</span>
+        <span class="line">built to</span>
+        <span class="line"><em class="it">grow.</em></span>
+      </h1>
+      <div class="hero__sub reveal">
+        <p>Daily superfood gummies made for feeling good, staying consistent and sharing wellness with the people around you.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--lime btn--lg" href="#shop">Get your mau <svg><use href="#i-arrow"/></svg></a>
+          <a class="link-arrow" href="#how">See how it works <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__stage">
+      <div class="hero__panel">
+        <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+        <span class="hero__ring" aria-hidden="true"></span>
+        <img class="hero__pack" data-speed="-0.06" src="assets/mau-pack.webp" width="1122" height="1402" alt="MAU Superfood Bear Gummies pouch and single sachet, fresh berry taste, sugar-free">
+        <img class="g g--h1" data-speed="0.12" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <img class="g g--h2" data-speed="0.2" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+        <img class="g g--h3" data-speed="0.08" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <span class="tag tag--h1"><i></i>Daily superfood</span>
+        <span class="tag tag--h2"><i></i>Made to feel good</span>
+        <span class="tag tag--h3"><i></i>Made to share</span>
+      </div>
+
+      <div class="sticker sticker--lime hero__sticker" aria-label="Build your mau">
+        <svg class="sticker__ring" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="ring-hero" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0"/></defs>
+          <text><textPath href="#ring-hero" textLength="462" lengthAdjust="spacing">BUILD YOUR MAU ✦ SHARE WELLNESS ✦ EARN REWARDS ✦</textPath></text>
+        </svg>
+        <svg class="sticker__icon" aria-hidden="true"><use href="#i-bear"/></svg>
+      </div>
+    </div>
+
+    <img class="g g--hero-big" data-speed="0.18" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+  </div>
+</section>
+
+<!-- ============ 4. MARQUEE ============ -->
+<section class="ribbons" aria-label="Brand promise">
+  <div class="ribbon ribbon--forest">
+    <div class="ribbon__track">
+      <div class="ribbon__set">
+        <span>Daily wellness</span><img src="assets/gummy-berry.svg" alt=""><span>Superfood gummies</span><img src="assets/gummy-coral.svg" alt=""><span>Feel good</span><img src="assets/gummy-berry.svg" alt=""><span>Share wellness</span><img src="assets/gummy-coral.svg" alt=""><span><em class="it">Build your mau</em></span><img src="assets/gummy-berry.svg" alt="">
+      </div>
+      <div class="ribbon__set" aria-hidden="true">
+        <span>Daily wellness</span><img src="assets/gummy-berry.svg" alt=""><span>Superfood gummies</span><img src="assets/gummy-coral.svg" alt=""><span>Feel good</span><img src="assets/gummy-berry.svg" alt=""><span>Share wellness</span><img src="assets/gummy-coral.svg" alt=""><span><em class="it">Build your mau</em></span><img src="assets/gummy-berry.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="ribbon ribbon--lime" aria-hidden="true">
+    <div class="ribbon__track ribbon__track--rev">
+      <div class="ribbon__set">
+        <span>Sugar-free</span><svg><use href="#i-spark"/></svg><span>Fresh berry taste</span><svg><use href="#i-spark"/></svg><span>One a day routine</span><svg><use href="#i-spark"/></svg><span>Made to share</span><svg><use href="#i-spark"/></svg>
+      </div>
+      <div class="ribbon__set">
+        <span>Sugar-free</span><svg><use href="#i-spark"/></svg><span>Fresh berry taste</span><svg><use href="#i-spark"/></svg><span>One a day routine</span><svg><use href="#i-spark"/></svg><span>Made to share</span><svg><use href="#i-spark"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. DAILY WELLNESS ============ -->
+<section class="daily section" id="why">
+  <div class="wrap">
+    <header class="daily__head">
+      <p class="label reveal">(01) — The idea</p>
+      <h2 class="d h-xl reveal">Daily wellness shouldn’t feel like <span class="it scribble">homework.<svg aria-hidden="true"><use href="#i-underline"/></svg></span></h2>
+      <p class="daily__intro reveal">No pill organisers. No chalky powders. No twelve-step routines. Just a gummy you’ll actually look forward to — and a reason to keep showing up for yourself.</p>
+    </header>
+
+    <div class="daily__grid">
+      <article class="benefit benefit--easy reveal">
+        <figure class="shot shot--pistachio">
+          <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+          <img class="shot__pack" data-speed="-0.05" src="assets/mau-pack.webp" alt="MAU pouch on a sunlit kitchen counter">
+          <img class="g g--e1" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+          <img class="g g--e2" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+          <figcaption class="brief"><b>Photo 02</b> Kitchen counter, 8:10am. Pouch, coffee, keys. Hard morning light.</figcaption>
+        </figure>
+        <div class="benefit__text">
+          <span class="benefit__n">01</span>
+          <h3 class="d">Easy.</h3>
+          <p>One simple daily routine.</p>
+        </div>
+      </article>
+
+      <article class="benefit benefit--delicious reveal">
+        <img class="g g--d1" data-speed="0.1" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <img class="g g--d2" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+        <span class="benefit__n">02</span>
+        <h3 class="d">Delicious.</h3>
+        <p>Something you’ll actually <em class="it">want</em> to take.</p>
+      </article>
+
+      <article class="benefit benefit--consistent reveal">
+        <span class="benefit__n">03</span>
+        <h3 class="d">Consistent.</h3>
+        <p>Designed to become part of your day.</p>
+        <ol class="week" aria-label="Example week streak">
+          <li class="on"><img src="assets/gummy-berry.svg" alt=""><span>M</span></li>
+          <li class="on"><img src="assets/gummy-berry.svg" alt=""><span>T</span></li>
+          <li class="on"><img src="assets/gummy-berry.svg" alt=""><span>W</span></li>
+          <li class="on"><img src="assets/gummy-berry.svg" alt=""><span>T</span></li>
+          <li class="on"><img src="assets/gummy-berry.svg" alt=""><span>F</span></li>
+          <li class="today"><img src="assets/gummy-coral.svg" alt=""><span>S</span></li>
+          <li><i></i><span>S</span></li>
+        </ol>
+        <p class="hand week__note">day 6. you got this.</p>
+      </article>
+
+      <article class="benefit benefit--social reveal">
+        <div>
+          <span class="benefit__n">04</span>
+          <h3 class="d">Social.</h3>
+          <p>Wellness worth sharing.</p>
+        </div>
+        <div class="social-viz" aria-hidden="true">
+          <div class="avatars">
+            <span style="--c:var(--coral)">AL</span><span style="--c:var(--pistachio)">JO</span><span style="--c:var(--lime)">KI</span><span style="--c:var(--cream)">+4</span>
+          </div>
+          <div class="linkchip"><svg><use href="#i-link"/></svg>mau.com/<b>@you</b></div>
+          <p class="hand">your link, your people</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. INGREDIENTS ============ -->
+<section class="inside section" id="inside">
+  <div class="wrap">
+    <header class="inside__head">
+      <p class="label reveal">(02) — Inside every bear</p>
+      <h2 class="d h-xl reveal">Good stuff.<br>In gummy <em class="it">form.</em></h2>
+      <div class="inside__aside reveal">
+        <p>Four daily focus areas, one glossy fresh-berry bear. We’re finalising the formula with our manufacturing partner — full ingredients and amounts will live here, in plain language.</p>
+        <a class="link-arrow" href="#science">See what’s inside <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </header>
+
+    <div class="inside__stage">
+      <div class="plate" aria-hidden="true">
+        <span class="plate__disc"></span>
+        <img class="g g--plate" data-speed="0.08" src="assets/gummy-berry.svg" alt="">
+        <img class="g g--plate2" data-speed="0.16" src="assets/gummy-coral.svg" alt="">
+        <svg class="plate__ring" viewBox="0 0 200 200">
+          <defs><path id="ring-plate" d="M100 100m-92 0a92 92 0 1 1 184 0a92 92 0 1 1-184 0"/></defs>
+          <text><textPath href="#ring-plate" textLength="576" lengthAdjust="spacing">FRESH BERRY ✦ SUGAR-FREE ✦ SOFT, JUICY CHEW ✦ 30 BEARS PER POUCH ✦</textPath></text>
+        </svg>
+      </div>
+
+      <ul class="focus">
+        <li class="focus__item focus__item--1 reveal"><span class="mono">01</span><b class="d">Daily vitamins</b><small>Vitamin blend — formula TBC</small></li>
+        <li class="focus__item focus__item--2 reveal"><span class="mono">02</span><b class="d">Energy</b><small>Superfood blend — formula TBC</small></li>
+        <li class="focus__item focus__item--3 reveal"><span class="mono">03</span><b class="d">Immunity</b><small>Ingredient list — formula TBC</small></li>
+        <li class="focus__item focus__item--4 reveal"><span class="mono">04</span><b class="d">Gut health</b><small>Ingredient list — formula TBC</small></li>
+      </ul>
+
+      <div class="receipt reveal" aria-label="What's inside, placeholder ticket">
+        <p class="receipt__title">What’s inside</p>
+        <dl>
+          <div><dt>Batch</dt><dd>Nº 001</dd></div>
+          <div><dt>Flavour</dt><dd>Fresh berry</dd></div>
+          <div><dt>Format</dt><dd>Bear gummy</dd></div>
+        </dl>
+        <hr>
+        <ul>
+          <li><span>Vitamin blend</span><span>TBC</span></li>
+          <li><span>Energy blend</span><span>TBC</span></li>
+          <li><span>Immunity blend</span><span>TBC</span></li>
+          <li><span>Gut blend</span><span>TBC</span></li>
+          <li><span>Added sugar</span><span>0 g</span></li>
+        </ul>
+        <hr>
+        <ul>
+          <li><span>Per pouch</span><span>30 bears</span></li>
+          <li><span>Serving</span><span>TBC</span></li>
+        </ul>
+        <p class="receipt__fine">Final formulation in review. Ingredients, amounts &amp; claims shown as placeholders.</p>
+        <span class="receipt__bars" aria-hidden="true"></span>
+      </div>
+
+      <span class="sticker-flat sticker-flat--coral inside__sticker">Sugar<br>free!</span>
+      <p class="hand inside__note" aria-hidden="true">tastes like a treat <svg><use href="#i-hand-loop"/></svg></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. BRAND MOMENT ============ -->
+<section class="moment" aria-labelledby="moment-title">
+  <div class="moment__inner wrap">
+    <p class="label">(03) — There’s more to it</p>
+    <h2 class="moment__type d" id="moment-title">
+      <span class="ml ml--ghost">Some people</span>
+      <span class="ml ml--ghost">buy gummies.</span>
+      <span class="ml ml--solid">Others</span>
+      <span class="ml ml--solid">build <em class="it">mau.</em></span>
+    </h2>
+
+    <figure class="polaroid" data-speed="-0.08">
+      <div class="shot shot--coral">
+        <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+        <img class="shot__pack" src="assets/mau-pack.webp" alt="Friends sharing a MAU pouch by the pool">
+        <img class="g g--m1" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+      </div>
+      <figcaption class="brief brief--dark"><b>Photo 03</b> Poolside, late afternoon. Three friends, one pouch going round.</figcaption>
+      <span class="sticker-flat sticker-flat--forest polaroid__sticker">Made<br>to share</span>
+    </figure>
+
+    <div class="moment__copy">
+      <p>MAU is a product first. Love it, and there’s a whole world around it: share what you take, grow a circle of friends who take it too, and earn MAU Stars along the way.</p>
+      <a class="link-arrow" href="#how">Here’s how it works <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. HOW MAU WORKS ============ -->
+<section class="how section" id="how">
+  <div class="wrap how__grid">
+    <header class="how__head">
+      <p class="label reveal">(04) — How MAU works</p>
+      <h2 class="d h-xl reveal">Take it.<br>Share it.<br><em class="it">Grow</em> it.</h2>
+      <p class="reveal">Start with the gummy. Everything else is optional — and it all moves you forward.</p>
+      <a class="btn btn--forest reveal" href="#shop">Start with one pouch <svg><use href="#i-arrow"/></svg></a>
+    </header>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__n">01</span>
+        <div class="step__body">
+          <h3 class="d">Take</h3>
+          <p>Make MAU part of your daily routine.</p>
+        </div>
+        <div class="step__viz viz-take" aria-hidden="true">
+          <img src="assets/gummy-berry.svg" alt="">
+          <span class="chip chip--lime">AM <svg><use href="#i-check"/></svg></span>
+        </div>
+      </li>
+      <li class="step__note hand" aria-hidden="true"><svg><use href="#i-hand-down"/></svg>loved it? tell someone</li>
+      <li class="step reveal">
+        <span class="step__n">02</span>
+        <div class="step__body">
+          <h3 class="d">Share</h3>
+          <p>Get your personal MAU link and recommend it.</p>
+        </div>
+        <div class="step__viz viz-share" aria-hidden="true">
+          <div class="linkchip linkchip--light"><svg><use href="#i-link"/></svg>mau.com/<b>@you</b></div>
+          <span class="chip chip--coral">Copied!</span>
+        </div>
+      </li>
+      <li class="step__note hand" aria-hidden="true"><svg><use href="#i-hand-down"/></svg>they’re in. welcome!</li>
+      <li class="step reveal">
+        <span class="step__n">03</span>
+        <div class="step__body">
+          <h3 class="d">Grow</h3>
+          <p>Friends join your MAU circle.</p>
+        </div>
+        <div class="step__viz viz-grow" aria-hidden="true">
+          <div class="avatars avatars--lg">
+            <span style="--c:var(--coral)">AL</span><span style="--c:var(--lime)">JO</span><span style="--c:var(--pistachio)">KI</span><span style="--c:var(--paper)">+5</span>
+          </div>
+        </div>
+      </li>
+      <li class="step__note hand" aria-hidden="true"><svg><use href="#i-hand-down"/></svg>it adds up</li>
+      <li class="step reveal">
+        <span class="step__n">04</span>
+        <div class="step__body">
+          <h3 class="d">Earn</h3>
+          <p>Unlock Stars, rewards and commissions.</p>
+        </div>
+        <div class="step__viz viz-earn" aria-hidden="true">
+          <span class="starburst"><svg><use href="#i-spark"/></svg>+500</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="wrap">
+    <div class="levels reveal" aria-label="MAU status levels">
+      <p class="label">Your MAU status</p>
+      <ol class="levels__track">
+        <li class="level is-here">
+          <span class="level__node"></span>
+          <span class="level__here">You start here</span>
+          <b class="d">Starter</b>
+          <small>Your first MAU order</small>
+        </li>
+        <li class="level">
+          <span class="level__node"></span>
+          <b class="d">Connector</b>
+          <small>Your first friends join</small>
+        </li>
+        <li class="level">
+          <span class="level__node"></span>
+          <b class="d">Builder</b>
+          <small>A growing circle, 10+ members</small>
+        </li>
+        <li class="level">
+          <span class="level__node"></span>
+          <b class="d">Circle</b>
+          <small>The full MAU circle, 25+ members</small>
+        </li>
+      </ol>
+      <p class="fine">Status names and thresholds shown for illustration. Final program details live in the MAU Affiliate Terms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. MAU STARS ============ -->
+<section class="stars section" id="stars">
+  <div class="wrap">
+    <header class="stars__head">
+      <p class="label label--lime reveal">(05) — MAU Stars</p>
+      <h2 class="d h-xxl reveal">Everything you do<br>moves you <em class="it">forward.</em></h2>
+    </header>
+
+    <div class="stars__grid">
+      <div class="stars__copy">
+        <p class="stars__lead reveal"><b>MAU Stars</b> are the rewards layer of MAU. Take your gummies, keep your streak, bring your friends — and watch your balance grow.</p>
+        <ul class="earn">
+          <li class="reveal"><b class="d">Purchases</b><span class="mono">Every order</span></li>
+          <li class="reveal"><b class="d">Referrals</b><span class="mono">When friends join</span></li>
+          <li class="reveal"><b class="d">Activity</b><span class="mono">Check-ins &amp; challenges</span></li>
+          <li class="reveal"><b class="d">Streaks</b><span class="mono">Keep the routine going</span></li>
+          <li class="reveal"><b class="d">Community</b><span class="mono">Create, vote, show up</span></li>
+        </ul>
+        <div class="rate reveal">
+          <span class="rate__a d">$1</span><span class="rate__eq mono">USD =</span><span class="rate__b d">100</span><span class="rate__u mono">MAU Stars</span>
+        </div>
+        <p class="fine fine--light reveal">MAU Stars are loyalty rewards, not cryptocurrency or ownership. They have no cash value outside the MAU rewards program.</p>
+      </div>
+
+      <div class="stars__ui">
+        <div class="starcard reveal" id="starcard">
+          <div class="starcard__top">
+            <span class="starcard__brand"><svg><use href="#i-bear"/></svg>My mau</span>
+            <span class="mono">Nov 2026</span>
+          </div>
+          <div class="starcard__balance">
+            <span class="starcard__num d" data-count="18450">18,450</span>
+            <span class="starcard__unit mono"><svg><use href="#i-spark"/></svg>MAU Stars</span>
+          </div>
+
+          <div class="starcard__status">
+            <div>
+              <span class="mono">Status</span>
+              <b class="d starcard__level">Builder</b>
+            </div>
+            <div class="starcard__next">
+              <span class="mono">Next</span>
+              <b class="d">Circle <svg><use href="#i-arrow"/></svg></b>
+            </div>
+          </div>
+          <div class="dots" data-filled="18" data-total="25" aria-label="18 of 25 members"></div>
+          <p class="starcard__members"><b>18 / 25</b> members · 7 to go</p>
+
+          <div class="starcard__activity">
+            <p class="mono">Recent activity</p>
+            <ul>
+              <li><b class="d">+5,000</b><span>Monthly MAU order</span><time class="mono">Today</time></li>
+              <li><b class="d">+2,000</b><span>Friend joined</span><time class="mono">Yesterday</time></li>
+              <li><b class="d">+500</b><span>7-day streak</span><time class="mono">Mon</time></li>
+            </ul>
+          </div>
+        </div>
+        <span class="sticker-flat sticker-flat--lime starcard__sticker">+500<br><small>streak!</small></span>
+        <img class="g g--s1" data-speed="0.14" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+        <p class="hand starcard__note" aria-hidden="true">your balance, live <svg><use href="#i-hand-arrow"/></svg></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. COMMUNITY ============ -->
+<section class="community section" id="community">
+  <div class="wrap">
+    <header class="community__head">
+      <p class="label reveal">(06) — Community</p>
+      <h2 class="d h-xl reveal">Better together.<br><em class="it">Literally.</em></h2>
+      <p class="reveal">Routines stick when your friends are in on it. The MAU community is where challenges happen, flavours get decided and members get in first.</p>
+    </header>
+
+    <div class="collage">
+      <figure class="shot shot--coral collage__a reveal">
+        <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+        <img class="shot__pack" data-speed="-0.05" src="assets/mau-pack.webp" alt="MAU pouch passed between friends on a rooftop">
+        <img class="g g--c1" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <img class="g g--c2" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <figcaption class="brief"><b>Photo 05</b> Rooftop, golden hour. Friends passing the pouch, mid-laugh.</figcaption>
+      </figure>
+
+      <article class="ccard ccard--challenge collage__b reveal">
+        <p class="label">Daily challenges</p>
+        <h3 class="d">7 mornings.<br>7 bears.</h3>
+        <ol class="mini-week" aria-label="Day 4 of 7">
+          <li class="on"></li><li class="on"></li><li class="on"></li><li class="on now"></li><li></li><li></li><li></li>
+        </ol>
+        <p>Build healthy routines.</p>
+      </article>
+
+      <figure class="shot shot--forest collage__c reveal">
+        <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+        <img class="g g--c3" data-speed="0.1" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+        <img class="g g--c4" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <span class="rec" aria-hidden="true"><i></i>REC 0:14</span>
+        <figcaption class="brief brief--light"><b>Photo 06</b> Creator filming her morning routine. Phone in hand, café window.</figcaption>
+      </figure>
+
+      <article class="ccard ccard--create collage__d reveal">
+        <p class="label">Create + share</p>
+        <div class="post">
+          <span class="post__avatar"></span>
+          <div><b>@you</b><span>day 30 of my mau ✦ the only routine I haven’t quit</span></div>
+        </div>
+        <p>Share your MAU journey. <span class="mono">#buildyourmau</span></p>
+      </article>
+
+      <article class="ccard ccard--vote collage__e reveal">
+        <p class="label">Shape what’s next</p>
+        <h3 class="d">Next flavour?</h3>
+        <ul class="poll">
+          <li><img src="assets/gummy-lime.svg" alt=""><span>Concept A</span><i style="--w:48%"></i></li>
+          <li><img src="assets/gummy-coral.svg" alt=""><span>Concept B</span><i style="--w:32%"></i></li>
+          <li><img src="assets/gummy-berry.svg" alt=""><span>Concept C</span><i style="--w:20%"></i></li>
+        </ul>
+        <p>Vote on future flavours and products.</p>
+      </article>
+
+      <article class="ticket collage__f reveal">
+        <div class="ticket__main">
+          <p class="mono">Members only</p>
+          <h3 class="d">Early<br>access</h3>
+          <p>Active members get first access to launches and experiences.</p>
+        </div>
+        <div class="ticket__stub"><span class="mono">Admit one</span><svg><use href="#i-bear"/></svg></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. PURCHASE ============ -->
+<section class="buy section" id="shop">
+  <div class="wrap buy__grid">
+    <div class="buy__media">
+      <div class="buy__panel" id="buyPanel" data-view="pack">
+        <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+        <img class="buy__pack" src="assets/mau-pack.webp" alt="MAU Daily Superfood Gummies pouch, fresh berry taste">
+        <img class="g g--b1" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <img class="g g--b2" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+        <img class="g g--b3" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+        <img class="buy__macro" src="assets/gummy-berry.svg" alt="Close-up of a glossy fresh-berry MAU bear gummy">
+        <span class="sticker-flat sticker-flat--lime buy__sticker">Sugar-<br>free</span>
+        <span class="tag tag--b1"><i></i>28-day supply</span>
+      </div>
+      <div class="thumbs" role="tablist" aria-label="Product images">
+        <button class="thumb is-active" role="tab" aria-selected="true" data-view="pack"><img src="assets/mau-pack.webp" alt="Pouch"></button>
+        <button class="thumb thumb--coral" role="tab" aria-selected="false" data-view="macro"><img src="assets/gummy-berry.svg" alt="Gummy close-up"></button>
+        <button class="thumb thumb--lime" role="tab" aria-selected="false" data-view="pile"><img src="assets/gummy-coral.svg" alt="Gummies"></button>
+      </div>
+    </div>
+
+    <div class="buy__info">
+      <p class="label">(07) — Shop</p>
+      <h2 class="d h-xl">Pick your <em class="it">mau.</em></h2>
+      <h3 class="buy__name">MAU Daily Superfood Gummies</h3>
+      <p class="buy__meta mono">Fresh berry · Sugar-free · 30 bears</p>
+      <p class="buy__desc">Our everyday superfood gummy in a juicy fresh-berry flavour. Soft, glossy, sugar-free — and designed to be the easiest part of your morning.</p>
+
+      <form class="plans" id="plans" onsubmit="return false">
+        <label class="plan plan--sub is-selected">
+          <input type="radio" name="plan" value="sub" checked>
+          <span class="plan__badge">Most popular</span>
+          <span class="plan__row">
+            <span class="plan__radio"></span>
+            <span class="plan__title">Subscribe &amp; save<small>28-day supply</small></span>
+            <span class="plan__price"><b class="d">$XX</b><small>/ month</small><em>$X.XX / day</em></span>
+          </span>
+          <ul class="plan__perks">
+            <li><svg><use href="#i-check"/></svg>Best price</li>
+            <li><svg><use href="#i-check"/></svg>Free shipping</li>
+            <li><svg><use href="#i-check"/></svg>Bonus MAU Stars</li>
+            <li><svg><use href="#i-check"/></svg>Skip anytime</li>
+            <li><svg><use href="#i-check"/></svg>Cancel anytime</li>
+            <li><svg><use href="#i-check"/></svg>30-day guarantee</li>
+          </ul>
+        </label>
+        <label class="plan plan--once">
+          <input type="radio" name="plan" value="once">
+          <span class="plan__row">
+            <span class="plan__radio"></span>
+            <span class="plan__title">One-time purchase<small>28-day supply</small></span>
+            <span class="plan__price"><b class="d">$XX</b></span>
+          </span>
+          <ul class="plan__perks">
+            <li><svg><use href="#i-check"/></svg>No commitment</li>
+            <li><svg><use href="#i-check"/></svg>Earn MAU Stars</li>
+          </ul>
+        </label>
+        <button class="btn btn--lime btn--xl btn--block" id="buyCta" type="submit"><span>Start my mau</span><svg><use href="#i-arrow"/></svg></button>
+      </form>
+      <ul class="buy__trust mono">
+        <li><svg><use href="#i-spark"/></svg>Free shipping, first order</li>
+        <li><svg><use href="#i-spark"/></svg>30-day guarantee</li>
+        <li><svg><use href="#i-spark"/></svg>Skip or cancel anytime</li>
+      </ul>
+      <a class="link-arrow buy__more" href="product.html">See full product details <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. TRUST ============ -->
+<section class="trust section" id="science">
+  <div class="wrap trust__grid">
+    <header class="trust__head">
+      <p class="label reveal">(08) — Quality</p>
+      <h2 class="d h-xl reveal">Good vibes.<br>Serious <em class="it">standards.</em></h2>
+      <a class="link-arrow reveal" href="#">Explore our standards <svg><use href="#i-arrow"/></svg></a>
+    </header>
+
+    <ol class="index">
+      <li class="reveal"><span class="index__n d">01</span><div><h3>Ingredient transparency</h3><p>Every ingredient and amount listed clearly — on the pouch and right here.</p></div></li>
+      <li class="reveal"><span class="index__n d">02</span><div><h3>Third-party testing</h3><p>Independent lab testing. <span class="ph">[Lab partner &amp; certificates to be supplied]</span></p></div></li>
+      <li class="reveal"><span class="index__n d">03</span><div><h3>Quality manufacturing</h3><p>Made with care by our manufacturing partner. <span class="ph">[Facility &amp; standards to be supplied]</span></p></div></li>
+      <li class="reveal"><span class="index__n d">04</span><div><h3>Clear nutrition information</h3><p>A full, readable supplement facts panel — published before launch.</p></div></li>
+    </ol>
+
+    <aside class="trust__aside reveal">
+      <div class="facts" aria-label="Supplement facts placeholder">
+        <p class="facts__title">Supplement Facts</p>
+        <p class="facts__sub">Serving size: TBC · Servings per pouch: TBC</p>
+        <div class="facts__row facts__row--head"><span>Amount per serving</span><span>% DV</span></div>
+        <div class="facts__row"><i style="--w:62%"></i><i style="--w:14%"></i></div>
+        <div class="facts__row"><i style="--w:48%"></i><i style="--w:12%"></i></div>
+        <div class="facts__row"><i style="--w:70%"></i><i style="--w:16%"></i></div>
+        <div class="facts__row"><i style="--w:40%"></i><i style="--w:10%"></i></div>
+        <div class="facts__row"><i style="--w:56%"></i><i style="--w:14%"></i></div>
+        <p class="facts__fine">Final panel published once formulation is confirmed.</p>
+      </div>
+      <div class="certs">
+        <span class="cert">Certification<br>placeholder</span>
+        <span class="cert">Certification<br>placeholder</span>
+        <span class="cert">Certification<br>placeholder</span>
+      </div>
+      <p class="fine">Only verified certifications will be displayed.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 13. UGC ============ -->
+<section class="ugc section" id="wild">
+  <div class="wrap ugc__head">
+    <div>
+      <p class="label label--lime reveal">(09) — Out there</p>
+      <h2 class="d h-xl reveal">MAU in the <em class="it">wild.</em></h2>
+    </div>
+    <div class="ugc__ctrl">
+      <p class="mono">Tag <b>#buildyourmau</b> to be featured</p>
+      <div class="ugc__btns">
+        <button class="round-btn" data-dir="-1" aria-label="Scroll back"><svg style="transform:scaleX(-1)"><use href="#i-arrow"/></svg></button>
+        <button class="round-btn" data-dir="1" aria-label="Scroll forward"><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="feed" id="feed" tabindex="0" aria-label="Social feed, placeholder content">
+    <article class="tile tile--video tile--coral">
+      <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+      <img class="tile__pack" src="assets/mau-pack.webp" alt="">
+      <span class="tile__src">TikTok</span><span class="tile__play"><svg><use href="#i-play"/></svg></span>
+      <div class="tile__meta"><b>@creator</b><span>Morning routine video · 0:15</span></div>
+    </article>
+    <article class="tile tile--square tile--pistachio">
+      <img class="g g--t1" src="assets/gummy-berry.svg" alt="">
+      <img class="g g--t2" src="assets/gummy-coral.svg" alt="">
+      <span class="tile__src">Instagram</span>
+      <div class="tile__meta"><b>@creator</b><span>Gummy macro post</span></div>
+    </article>
+    <article class="tile tile--review">
+      <span class="tile__src tile__src--dark">Verified review</span>
+      <p class="d">“Your customer’s words go here.”</p>
+      <span class="skel" style="--w:90%"></span><span class="skel" style="--w:70%"></span><span class="skel" style="--w:40%"></span>
+      <div class="tile__meta tile__meta--dark"><b>Reviews open at launch</b><span>Pulled from verified purchases only</span></div>
+    </article>
+    <article class="tile tile--video tile--lime">
+      <img class="g g--t3" src="assets/gummy-berry.svg" alt="">
+      <span class="tile__src tile__src--dark">Reels</span><span class="tile__play tile__play--dark"><svg><use href="#i-play"/></svg></span>
+      <div class="tile__meta tile__meta--dark"><b>@creator</b><span>Unboxing · 0:22</span></div>
+    </article>
+    <article class="tile tile--portrait tile--berry">
+      <img class="gobo" src="assets/gobo.svg" alt="" aria-hidden="true">
+      <img class="tile__pack tile__pack--tilt" src="assets/mau-pack.webp" alt="">
+      <span class="tile__src">Creator</span>
+      <div class="tile__meta"><b>@creator</b><span>Travel diary photo</span></div>
+    </article>
+    <article class="tile tile--square tile--cream">
+      <img class="g g--t4" src="assets/gummy-lime.svg" alt="">
+      <img class="g g--t5" src="assets/gummy-berry.svg" alt="">
+      <span class="tile__src tile__src--dark">Instagram</span>
+      <div class="tile__meta tile__meta--dark"><b>@creator</b><span>Café table flat-lay</span></div>
+    </article>
+    <article class="tile tile--video tile--forest2">
+      <img class="tile__pack" src="assets/mau-pack.webp" alt="">
+      <span class="tile__src">TikTok</span><span class="tile__play"><svg><use href="#i-play"/></svg></span>
+      <div class="tile__meta"><b>@creator</b><span>Day 30 check-in · 0:31</span></div>
+    </article>
+  </div>
+  <p class="wrap fine fine--light ugc__fine">Placeholder feed. Live creator and customer content will be embedded at launch.</p>
+</section>
+
+<!-- ============ 14. FAQ ============ -->
+<section class="faq section" id="faq">
+  <div class="wrap faq__grid">
+    <header class="faq__head">
+      <p class="label">(10) — FAQ</p>
+      <h2 class="d h-xl">Still <em class="it">curious?</em></h2>
+      <p>Can’t find what you’re looking for? <a class="u" href="#">Write to us</a> — a real human answers.</p>
+      <img class="g g--faq" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+    </header>
+
+    <div class="acc" id="acc">
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">01</span>What is MAU?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>MAU is a daily wellness brand built around superfood bear gummies in a fresh berry flavour. Around the product there’s an optional community and a rewards program called MAU Stars.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">02</span>How many gummies should I take?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>The recommended daily serving will be printed on the final label once the formulation is confirmed. Always follow the directions on the pouch. <span class="ph">[Serving guidance to be supplied]</span></p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">03</span>Can I buy MAU without joining the community?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>Absolutely. MAU is a product first. Buy once or subscribe — the community, referrals and rewards are completely optional.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">04</span>What are MAU Stars?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>MAU Stars are loyalty rewards you collect inside the MAU program and can use towards rewards and perks. As a reference, $1 USD spent equals 100 MAU Stars.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">05</span>How do I earn MAU Stars?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>Through purchases, referrals, activity like check-ins and challenges, daily streaks and community participation. The full earning table will be published in the MAU Stars terms.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">06</span>How does the referral program work?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>Every member gets a personal MAU link. When a friend orders through your link, they join your MAU circle and you earn Stars. Your status grows as your circle grows.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">07</span>Can I earn cash commissions?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>Eligible members may earn commissions under the MAU Affiliate Terms, where available. Earnings depend on real product sales and are not guaranteed. <span class="ph">[Eligibility &amp; regions to be supplied]</span></p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">08</span>What does my MAU circle mean?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>Your circle is the group of friends who joined MAU through your link. It’s how your status moves from Starter to Connector, Builder and Circle.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">09</span>Can I pause or cancel my subscription?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>Yes — skip a delivery, pause or cancel anytime from your account. No calls, no forms.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">10</span>Are MAU Stars cryptocurrency?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>No. MAU Stars are loyalty rewards. They are not cryptocurrency, tokens or any kind of financial instrument, and they can’t be traded.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <h3><button aria-expanded="false"><span class="mono">11</span>Do MAU Stars represent ownership?<svg><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel"><div><p>No. MAU Stars don’t represent shares, equity or any ownership in MAU. They’re rewards for being part of the MAU program.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. FINAL CTA ============ -->
+<section class="final" aria-labelledby="final-title">
+  <img class="gobo gobo--final" src="assets/gobo.svg" alt="" aria-hidden="true">
+  <div class="final__inner wrap">
+    <h2 class="final__type d" id="final-title"><span>Build</span><span>your mau.</span></h2>
+    <img class="final__pack" data-speed="-0.1" src="assets/mau-pack.webp" alt="MAU Superfood Bear Gummies pouch">
+    <img class="g g--f1" data-speed="0.22" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+    <img class="g g--f2" data-speed="0.12" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+    <img class="g g--f3" data-speed="0.3" src="assets/gummy-coral.svg" alt="" aria-hidden="true">
+    <img class="g g--f4" data-speed="0.18" src="assets/gummy-berry.svg" alt="" aria-hidden="true">
+    <div class="final__copy">
+      <p>Start with your daily wellness.<br>See where it <em class="it">grows.</em></p>
+      <a class="btn btn--forest btn--xl" href="#shop">Get your mau <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="sticker sticker--forest final__sticker" aria-hidden="true">
+      <svg class="sticker__ring" viewBox="0 0 200 200">
+        <defs><path id="ring-final" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0"/></defs>
+        <text><textPath href="#ring-final" textLength="462" lengthAdjust="spacing">DAILY WELLNESS ✦ MADE TO SHARE ✦ SUGAR-FREE ✦</textPath></text>
+      </svg>
+      <svg class="sticker__icon"><use href="#i-bear"/></svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 16. FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__news">
+        <h2 class="d">Get the good stuff <em class="it">first.</em></h2>
+        <p>Launch news, new flavours and member-only drops. No spam, ever.</p>
+        <form class="news" id="news">
+          <label class="sr" for="email">Email address</label>
+          <input id="email" type="email" placeholder="you@email.com" required autocomplete="email">
+          <button class="btn btn--lime" type="submit">Sign up</button>
+        </form>
+        <p class="news__ok mono" id="newsOk" hidden>You’re on the list ✦</p>
+      </div>
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <p class="mono">MAU</p>
+          <a href="#shop">Shop</a><a href="#how">How it works</a><a href="#stars">MAU Stars</a><a href="#community">Community</a><a href="#science">Science</a><a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <p class="mono">Company</p>
+          <a href="#">About</a><a href="#">Contact</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Affiliate Terms</a>
+        </div>
+        <div>
+          <p class="mono">Follow</p>
+          <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a><a href="#">Pinterest</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="footer__mark" aria-hidden="true">
+    <span class="d">mau</span>
+    <svg class="footer__bear"><use href="#i-bear"/></svg>
+  </div>
+  <div class="wrap footer__legal">
+    <p>© 2026 MAU. Build your mau. Share wellness. Earn rewards.</p>
+    <p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. MAU Stars are loyalty rewards, not cryptocurrency, securities or ownership. <span class="ph">[Final legal copy pending review]</span></p>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="stickybar" id="stickybar" aria-hidden="true">
+  <div class="stickybar__info"><b>MAU Daily</b><span class="mono">From $X.XX / day</span></div>
+  <a class="btn btn--lime" href="#shop" tabindex="-1">Get mau</a>
+</div>
+
+<script src="js/main.js" defer></script>
+<script src="js/shop.js" defer></script>
+</body>
+</html>
